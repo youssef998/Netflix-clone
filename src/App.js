@@ -1,24 +1,35 @@
-import logo from './logo.svg';
-import './App.css';
-
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  Navigate,
+} from "react-router-dom";
+import Login from "./Components/Login/Login";
+import Home from "./Components/Home/Home";
+// import Movies from "./Components/movies/Movies";
+import MoviesDetails from "./Components/MoviesDetails/MoviesDetails";
+import NotFound from "./Components/Notfound/NotFound";
+import AuthContext from "./store/auth-context";
+import { useContext } from "react";
+import Watchlist from "./Components/watchlist/Watchlist";
 function App() {
+  const authCtx = useContext(AuthContext);
+  const isLoggedIn = authCtx.isLoggedIn;
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Navigate to="/browse" />} />
+        <Route path="/browse" element={<Home />} />
+        {/* {isLoggedIn && <Route path="/browse" element={<Home />} />}
+        {!isLoggedIn && <Route path="/browse" element={<Login />} />} */}
+        <Route path="/login" element={<Login />} />
+
+        {/* <Route path="/movies/" element={<Movies />} /> */}
+        <Route path="/movies/:movieId" element={<MoviesDetails />} />
+        <Route path="/watchlist/:uId" element={<Watchlist />} />
+        <Route path="*" element={<NotFound />} />
+      </Routes>
+    </Router>
   );
 }
 
