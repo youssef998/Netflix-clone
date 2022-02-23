@@ -2,6 +2,40 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+- **Netflix Clone made with React, Redux and Firebase**
+
+## Tech Stack
+
+- [React](https://github.com/facebook/react) 
+- [Firebase](https://firebase.google.com/) 
+  - Backend and database with firestore for users
+- [TMDB API](https://www.themoviedb.org/?language=en-US)
+  - Movie service API
+- [React Router](https://reacttraining.com/react-router/web/guides/quick-start) 
+  - Complex and dynamic route generation 
+---
+
+## Implementation Highlights
+
+Netflix clone made with advanced react, axios & firebase which uses axios to  fetch movie data of over 30 thousand movies from Tmdb api. Features include user signup and signin, add to list option for each user,  dynamically generated movie and tv show pages and an interactive UI replicated from the original netflix app.
+
+### User Stories
+
+- Users can safely sign up and sign in, google sign in enabled with firebase
+- Collections of popular movies and tvshows for recommendations
+- Movie and TV Pages dynamically generated for every single movie
+- Details include imdb rating, overviews and movies info.
+- Add to list feature active throughout the app
+- Original netflix UI replicated with highly organized and advanced sass styling
+
+### Current Plans for Expansion
+
+- Implement user profile data and settings.
+- Add python scraper to customize recommendations for each user
+- Move backend and database to node and express.
+
+---
+
 ## Available Scripts
 
 In the project directory, you can run:
