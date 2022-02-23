@@ -19,9 +19,9 @@ function App() {
     <Router>
       <Routes>
         <Route path="/" element={<Navigate to="/browse" />} />
-        <Route path="/browse" element={<Home />} />
-        {/* {isLoggedIn && <Route path="/browse" element={<Home />} />}
-        {!isLoggedIn && <Route path="/browse" element={<Login />} />} */}
+        {/* <Route path="/browse" element={<Home />} /> */}
+        {isLoggedIn && <Route path="/browse" element={<Home />} />}
+        {!isLoggedIn && <Route path="/browse" element={<Login />} />}
         <Route path="/login" element={<Login />} />
 
         {/* <Route path="/movies/" element={<Movies />} /> */}
