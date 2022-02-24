@@ -9,6 +9,11 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ![demogif](Netflix-clone.gif)
 
 ---
+## Demo
+
+### Live Site Demo
+
+Demo: [Link](https://netflix-clone-e03a0.firebaseapp.com/browse)
 
 ## Tech Stack
 
