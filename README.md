@@ -4,6 +4,12 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 - **Netflix Clone made with React, Redux and Firebase**
 
+### Video Demo
+
+![demogif](Netflix-Clone.gif)
+
+---
+
 ## Tech Stack
 
 - [React](https://github.com/facebook/react) 
