@@ -6,7 +6,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ### Video Demo
 
-![demogif](Netflix-Clone.gif)
+![demogif](Netflix-clone.gif)
 
 ---
 
