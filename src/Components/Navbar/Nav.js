@@ -40,6 +40,11 @@ function Nav() {
           alt="Netflix Logo"
         />
       </NavLink>
+      {isLoggedIn && (
+        <button className="logout" onClick={logoutHandler}>
+          Logout
+        </button>
+      )}
 
       {/* <input
         // ref={searchInput}
@@ -56,12 +61,6 @@ function Nav() {
           src="https://th.bing.com/th/id/R.ba127376518c4bdb12d272b7f334358f?rik=IVfgm4Hr7NL0%2bw&pid=ImgRaw&r=0"
           alt="avatar Logo"
         />
-      )}
-
-      {isLoggedIn && (
-        <button className="logout_button" onClick={logoutHandler}>
-          Logout
-        </button>
       )}
     </div>
   );
